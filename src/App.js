@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Login from "./Components/Login/Login";
+import Loading from "./Components/AddNewColor/Loading";
+import AddNewColor from "./Components/AddNewColor/AddNewColor";
+import { BrowserRouter, Link, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 function App() {
+  const [IsLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    let userKey = localStorage.getItem("user");
+    console.log(userKey);
+    if (userKey) {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Route path={"/"} exact>
+          <Login />
+        </Route>
+        <Route path={"/AddColor"}>
+          <AddNewColor />
+        </Route>
+      </BrowserRouter>
     </div>
   );
 }

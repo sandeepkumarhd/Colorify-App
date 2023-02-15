@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.addNew {
+  text-align: center;
+}
+.addNew div {
+  border-radius: 10rem;
+  background-color: blue;
+}
+.addNew form {
+  width: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0.5rem auto;
+  align-items: center;
+}
+.addNew form input {
+  height: 3.5rem;
+  width: 18rem;
+}
+.addNew form button {
+  height: 2.5rem;
+  width: 9rem;
+  font-size: 1.2rem;
+  font-style: oblique;
+  border: none;
+  background-color: lightsalmon;
+  color: blue;
+  margin: 0.4rem;
+}
+.addNew form button:hover {
+  background-color: rgb(199, 227, 15);
+  cursor: pointer;
+  color: black;
+}
+.addNew .outputBox {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.addNew .outputBox div {
+  margin: 0.6rem;
+}

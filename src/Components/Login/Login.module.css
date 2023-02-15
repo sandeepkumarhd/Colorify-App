@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.login {
+  text-align: center;
+}
+.login div {
+  width: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4rem auto;
+  align-items: center;
+}
+.login div input {
+  margin: 0.4rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  width: 18rem;
+}
+.login div div button {
+  margin: 0.4rem;
+  height: 2.5rem;
+  width: 8rem;
+  border: none;
+  font-size: 1.2rem;
+  background-color: blue;
+  color: white;
+}
+
+.login div div button:hover {
+  background-color: darkslategray;
+  cursor: pointer;
+  color: black;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "Times New Roman", Times, serif;
+}
